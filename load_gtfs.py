@@ -18,7 +18,7 @@ def main():
     conn = MySQLdb.connect (host=settings.MYSQL_HOST, user=settings.MYSQL_USER, passwd=settings.MYSQL_PASSWORD, db=settings.MYSQL_DATABASE)
     cursor = conn.cursor()
     
-    TABLES = ['agency', 'calendar', 'calendar_dates', 'routes', 'stops', 'stop_times', 'trips']
+    TABLES = ['agency', 'calendar', 'calendar_dates', 'fare_attributes', 'fare_rules', 'feed_info', 'frequencies', 'routes', 'shapes', 'stops', 'stop_times', 'trips']
 
     for table in TABLES:
         print 'processing %s' % table
